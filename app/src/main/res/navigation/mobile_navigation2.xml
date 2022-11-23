@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.danasoftprototype.govet.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_adminhome" >
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_adminUsers"
+        android:name="com.danasoftprototype.govet.FrontEndAdmin.adminUsers"
+        android:label="activity_users"
+        tools:layout="@layout/activity_admin_users" />
+
+    <activity
+        android:id="@+id/nav_adminAppointment"
+        android:name="com.danasoftprototype.govet.FrontEndAdmin.adminAppoinment"
+        android:label="activity_appointments"
+        tools:layout="@layout/activity_admin_appoinment" />
+    <activity
+        android:id="@+id/nav_adminOnlinePayment"
+        android:name="com.danasoftprototype.govet.FrontEndAdmin.adminOnlinePayments"
+        android:label="activity_onlinepayment"
+        tools:layout="@layout/activity_admin_online_payments" />
+    <activity
+        android:id="@+id/nav_adminSettings"
+        android:name="com.danasoftprototype.govet.FrontEndAdmin.adminSettings"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_admin_settings" />
+
+</navigation>

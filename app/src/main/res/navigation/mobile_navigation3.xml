@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation3"
+    app:startDestination="@+id/nav_home">
+
+    <activity
+        android:id="@+id/nav_home"
+        android:name="com.danasoftprototype.govet.FrontEndVet.vetHome"
+        android:label="@string/menu_home"
+        tools:layout="@layout/activity_vet_home" />
+
+    <activity
+        android:id="@+id/nav_vetUsers"
+        android:name="com.danasoftprototype.govet.FrontEndVet.vetUsers"
+        android:label="menu_vetUsers"
+        tools:layout="@layout/activity_vet_users" />
+
+    <activity
+        android:id="@+id/nav_vetAppointment"
+        android:name="com.danasoftprototype.govet.FrontEndVet.vetSchedule"
+        android:label="menu_vetSched"
+        tools:layout="@layout/activity_vet_schedule" />
+    <activity
+        android:id="@+id/nav_vetMonitoring"
+        android:name="com.danasoftprototype.govet.FrontEndVet.vetMonitor"
+        android:label="menu_vetSched"
+        tools:layout="@layout/activity_vet_monitor" />
+    <activity
+        android:id="@+id/nav_vetSettings"
+        android:name="com.danasoftprototype.govet.FrontEndVet.vetSettings"
+        android:label="menu_vetSched"
+        tools:layout="@layout/layout_adminsettings" />
+</navigation>
